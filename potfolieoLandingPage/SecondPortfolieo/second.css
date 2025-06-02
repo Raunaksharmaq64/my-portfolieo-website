@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0a0a0a;
+  color: #fff;
+  font-family: 'Orbitron', sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  color: #0ff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #f0f;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10%;
+  background: #111;
+  border-bottom: 2px solid #0ff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle, #1a1a1a, #000);
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 15px;
+}
+
+.typewriter {
+  font-size: 1.2rem;
+  color: #0ff;
+  border-right: 2px solid #0ff;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 3s steps(22) forwards, blink 0.7s infinite;
+}
+
+@keyframes typing {
+  to {
+    width: 14ch;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.btn {
+  margin-top: 30px;
+  padding: 12px 25px;
+  border: 2px solid #0ff;
+  color: #0ff;
+  font-weight: bold;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #0ff;
+  color: #000;
+}
+
+.section {
+  padding: 60px 10%;
+  text-align: center;
+  background: #111;
+}
+
+.section.dark {
+  background: #000;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #f0f;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: #222;
+  padding: 20px 30px;
+  border: 2px solid #0ff;
+  border-radius: 10px;
+  color: #0ff;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.card:hover {
+  background: #0ff;
+  color: #000;
+  transform: scale(1.05);
+}
+
+.card.glow {
+  box-shadow: 0 0 15px #0ff, 0 0 30px #f0f;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  border-top: 2px solid #f0f;
+}
+
+/* Glitch effect */
+.glitch {
+  position: relative;
+  color: #0ff;
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  animation: glitch 1.5s infinite linear alternate-reverse;
+}
+
+.glitch::before {
+  top: -2px;
+  color: #f0f;
+  z-index: -1;
+}
+
+.glitch::after {
+  top: 2px;
+  color: #0ff;
+  z-index: -2;
+}
+
+@keyframes glitch {
+  0% {
+    clip: rect(0, 9999px, 0, 0);
+  }
+  5% {
+    clip: rect(0, 9999px, 10px, 0);
+  }
+  10% {
+    clip: rect(5px, 9999px, 15px, 0);
+  }
+  15% {
+    clip: rect(10px, 9999px, 20px, 0);
+  }
+  20% {
+    clip: rect(5px, 9999px, 25px, 0);
+  }
+  100% {
+    clip: rect(0, 9999px, 0, 0);
+  }
+}
