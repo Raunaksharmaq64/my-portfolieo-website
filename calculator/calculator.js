@@ -1,5 +1,5 @@
-aleart("opening calculator")
-aleart("this site is currently under working and not made responsives. open if you are on smartphone kindly open desktop mode.")
+alert("opening calculator")
+alert("this site is currently under working and not made responsives. open if you are on smartphone kindly open desktop mode.")
 
 gsap.from('.heading',{
     y:-1000,
