@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #41644A;
+}
+
+.main {
+    height: 90%;
+    width: 90%;
+    background-color: #fffffe;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1vh;
+    box-sizing: border-box;
+}
+
+.pannel {
+    display: flex;
+    justify-content: space-between;
+    background-color: #0D4715;
+    border: 3px solid rgb(245, 244, 244);
+    border-radius: 2rem;
+    flex-wrap: wrap; 
+    padding: 1vh;
+    gap: 1vh;
+}
+
+.header {
+    height: auto;
+    flex: 1 1 30%; 
+    min-width: 150px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2vh;
+}
+
+.box {
+    background-color: #fffffe;
+    padding: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 2rem;
+    height: 3vh;
+    color: black;
+    width: 10vh;
+}
+
+.pannelbottom {
+    flex: 1; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 1vh;
+    border: 3px solid rgb(254, 253, 253);
+    border-radius: 2rem;
+    overflow-y: auto; 
+    padding: 1vh;
+}
+#gameover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3vh;
+}
+#playagain{
+    background-color: aqua;
+    color: #000;
+    height: 8vh;
+    width: 15vh;
+    border-radius: 3rem;
+    border: #006d2a;
+}
+
+.button {
+    height: 5vh;
+    width: 5vh;
+    margin-top: 1px;
+    color: rgb(255, 254, 254);
+    background-color: #006d2a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 1.8vh;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #0a4101;
+}
