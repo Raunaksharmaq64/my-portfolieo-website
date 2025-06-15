@@ -129,7 +129,7 @@ header {
   cursor: pointer;
   background: transparent;
   border: 2px solid #1db954;
-  color: #1db954;
+  color: #f7f9f8;
   padding: 12px 28px;
   font-weight: 600;
   font-size: 1.1rem;
@@ -142,12 +142,12 @@ header {
   text-decoration: none;
 }
 
-.animated-btn:hover {
+.animated-btn
+:hover {
   background: #1db954;
   color: #121212;
   box-shadow: 0 0 15px #1db954;
 }
-
 .animated-btn::before {
   content: '';
   position: absolute;
@@ -268,6 +268,12 @@ header {
 #contact-form textarea:focus {
   outline: none;
   box-shadow: 0 0 8px #1db954;
+}
+
+#phonenumber{
+  color: white;
+  font-weight: bolder;
+  
 }
 
 #contact-form button {
